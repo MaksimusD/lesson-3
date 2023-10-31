@@ -14,3 +14,7 @@ build/
 
 ### Logs ###
 *.log
+
+### MacOS ###
+.gradlew
+.gradlew.bat
