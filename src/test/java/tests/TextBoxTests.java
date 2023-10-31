@@ -20,25 +20,25 @@ public class TextBoxTests {
     @Test
     void fillFormTest() {
         open("/automation-practice-form");
+        executeJavaScript("$('#fixedban').remove()");
+        executeJavaScript("$('footer').remove()");
         $("#firstName").setValue("Maks");
         $("#lastName").setValue("Markov");
         $("#userEmail").setValue("maksim@testov.com");
-        $("[for='gender-radio-1']").click();
+        $("#genterWrapper").$(byText("Male")).click();
         $("#userNumber").setValue("6663332233");
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption(1);
         $(".react-datepicker__year-select").selectOption("2000");
         $(".react-datepicker__day--002").click();
         $("#subjectsInput").setValue("P").pressEnter();
-        $(byText("Sports")).click();
+        $("#hobbiesWrapper").$(byText("Sports")).click();
         $("#uploadPicture").uploadFromClasspath("mufasa.jpg");
         $("#currentAddress").setValue("Pushkina Street");
-        executeJavaScript("$('#fixedban').remove()");
-        executeJavaScript("$('footer').remove()");
         $("#state").click();
-        $(byText("Uttar Pradesh")).click();
+        $("#state").$(byText("Uttar Pradesh")).click();
         $("#city").click();
-        $(byText("Merrut")).click();
+        $("#city").$(byText("Merrut")).click();
         $("#submit").click();
 
         $("tbody").shouldHave(text("Maks Markov"));
