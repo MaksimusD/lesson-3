@@ -18,7 +18,7 @@ public class FindGithubTextTest {
     }
 
     @Test
-    void FindGithubTextTest() {
+    void findGithubTextTest() {
         open("https://github.com");
         $("ul.d-lg-flex.list-style-none").$(Selectors.byText("Solutions")).hover();
         $("[href='/enterprise']").click();

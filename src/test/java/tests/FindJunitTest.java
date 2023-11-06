@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
 
-public class FindCodeJunit {
+public class FindJunitTest {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1600x900";
@@ -17,7 +17,7 @@ public class FindCodeJunit {
     }
 
     @Test
-    void FindCodeJunitTest() {
+    void findCodeJunitTest() {
         open("https://github.com/selenide/selenide");
         $("#wiki-tab").click();
         $(".markdown-body").$("ul").$$("li")
