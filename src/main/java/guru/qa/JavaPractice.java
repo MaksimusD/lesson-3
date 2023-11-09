@@ -17,8 +17,8 @@ public class JavaPractice {
         else if (a >= b || a <= b) System.out.println("а больше или равно ИЛИ меньше или равно б");
         else if (a > b && b < a) System.out.println("а больше и меньше б");
 
-        int Int = 125;
-        double Double = 33;
+        int Int = 200;
+        double Double = 49.5;
         System.out.println("Сложение : " + (Int + Double));
         System.out.println("Вычитание : " + (Int - Double));
         System.out.println("Деление : " + (Int / Double));
