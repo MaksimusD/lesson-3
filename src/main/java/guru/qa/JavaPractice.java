@@ -45,5 +45,15 @@ public class JavaPractice {
                 System.out.println("Отличник!");
                 break;
         }
+
+            byte x = 127;
+            byte y = 1;
+            byte p;
+            int np;
+            p = (byte) (x + y);
+            np = x + y;
+            System.out.println(x + y);
+            System.out.println("Переполнено : " + p);
+            System.out.println("Не переполнено : " + np);
     }
 }
